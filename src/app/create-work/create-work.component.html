@@ -1,0 +1,29 @@
+<div class="container1">
+	<div class="title">Add Work</div>
+
+	<div class="container">
+		<div class="form-group"> 
+			<input type="text" class="form-control" id="" name="" placeholder="workplace" [(ngModel)]="workplace">
+		</div>
+		  <div class="form-group"> 
+			<input type="date" class="form-control" id="" name="" [(ngModel)]="date_of_event">
+		</div>
+		
+		<div class="form-group">
+				<input type="text" class="form-control" id="" name="" placeholder="Name Of Event" [(ngModel)]="name_of_event">
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" id="" name="" placeholder="Description" [(ngModel)]="description">
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" id="" name="" placeholder="Video Link" [(ngModel)]="videoLink">
+		</div>
+		<form action="/uploadfile" enctype="multipart/form-data" method="POST"> 
+			<input #imageInput type="file" name="avatar" accept="image/*" (change)="processFile(imageInput)" />
+		</form>
+		<div class="form-group d-flex justify-content-center"> <!-- Register Button -->
+			<button type="submit" (click)= "workSubmission()" class="btn btn-primary">Create</button>
+		</div>
+	</div>
+	
+</div>

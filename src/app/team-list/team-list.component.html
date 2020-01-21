@@ -1,0 +1,9 @@
+<div class="title">Our Team</div>
+<div class="blogs_container">
+    <div class="blog col-3" *ngFor="let member of teamData">
+        <div class="image d-flex justify-content-center"><img src="{{imageurl}}{{member.imagename}}" alt=""> <div class="edit" (click) = "editMember(member._id)">Edit</div></div>
+        <div class="title d-flex justify-content-center">{{member.memberName}}</div>
+        <div class="date d-flex justify-content-center">{{member.designation}}</div>
+        <!-- <div class="content d-flex justify-content-center" (click) = "viewBlog(blog._id)">{{blog.blogContent}}</div> -->
+    </div>
+</div>

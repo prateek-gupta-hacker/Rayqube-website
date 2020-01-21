@@ -1,0 +1,50 @@
+.blogs_container{
+    width: 85vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .date{
+        cursor:pointer;
+    }
+    .title{
+        cursor:pointer;
+    }
+    .blog{
+        display: flex;
+        flex-direction: column;
+        
+        .image{
+            position: relative;
+            .edit{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color: white;
+                display: none;
+                cursor: pointer;
+                border: 1px solid white;
+                background: transparent;
+                padding: 3px 10px;
+                &:hover{
+                    background: white;
+                    color: black;
+                }
+            }
+            img{
+                width: 100%;
+            }
+            &:hover .edit{
+                display: block;
+            }
+        }
+    }
+}
+.title{
+    cursor:pointer;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    border-bottom: 1px solid #c6c6c6;
+    margin-bottom: 20px;
+}

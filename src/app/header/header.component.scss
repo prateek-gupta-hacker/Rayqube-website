@@ -1,0 +1,32 @@
+.head_container{
+    height: 8vh;
+    width: 100%;
+    background: #18428f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 80%;
+
+        }
+    }
+    .logout{
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        cursor: pointer;
+    }
+}
+.visible{
+    visibility: visible;
+}
+.notVisible{
+    visibility:hidden;
+}

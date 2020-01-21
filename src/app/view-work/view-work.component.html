@@ -1,0 +1,9 @@
+<div class="title">Our Work</div>
+<div class="blogs_container">
+    <div class="blog col-3" *ngFor="let work of workData">
+        <div class="image d-flex justify-content-center"><img src="{{imageurl}}{{work.imagename}}" alt=""> <div class="edit" (click) = "editWork(work._id)">Edit</div></div>
+        <div class="title d-flex justify-content-center" (click) = "viewWork(work._id)">{{work.name_of_event}}</div>
+        <div class="date d-flex justify-content-center" (click) = "viewWork(work._id)">{{work.date_of_event}}</div>
+        <!-- <div class="content d-flex justify-content-center" (click) = "viewBlog(blog._id)">{{blog.blogContent}}</div> -->
+    </div>
+</div>

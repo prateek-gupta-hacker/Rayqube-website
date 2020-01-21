@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="display-3 mb-3 d-flex justify-content-center">Update Work</div>
+	<div class="form-group"> 
+		<input type="text" class="form-control" id="" name=""  [(ngModel)]="name_of_event">
+	</div>
+  	<div class="form-group"> 
+		<input type="date" class="form-control" id="" name="" [(ngModel)]="date_of_event">
+	</div>
+	<div class="form-group">
+		<input type="text" class="form-control" id="" name=""  [(ngModel)]="workplace">
+  </div>
+  <div class="form-group">
+		<input type="text" class="form-control" id="" name="" [(ngModel)]="description">
+	</div>
+	<div class="form-group d-flex justify-content-center"> <!-- Register Button -->
+		<button type="submit" (click)= "update()" class="btn btn-primary">Update</button>
+	</div> 
+</div>
