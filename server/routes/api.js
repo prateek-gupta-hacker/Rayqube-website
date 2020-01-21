@@ -43,8 +43,9 @@ router.post('/signup', (req, res) => {                                          
             // signup.address1 = req.body.addrngess1;
             // signup.address2 = req.body.address2;
             signup.email = req.body.email;
+            signup.password = req.body.password;
             signup.password = pHash.generate(req.body.password);
-            // signup.password = req.body.password;
+            
             signup.token = 123456789;
             console.log(signup);
             signup.save((err,signupData) => {
